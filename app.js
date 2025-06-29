@@ -7,4 +7,5 @@ const port = process.env.PORT || 3000;
 
 require('dotenv').config();
 
-app.use(express.urlencoded({ extended : true }))
+app.use(express.urlencoded({ extended : true }));
+app.use(express.static("Wealth")) 
