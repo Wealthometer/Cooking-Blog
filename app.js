@@ -9,3 +9,5 @@ require('dotenv').config();
 
 app.use(express.urlencoded({ extended : true }));
 app.use(express.static("Wealth"))
+
+ 
