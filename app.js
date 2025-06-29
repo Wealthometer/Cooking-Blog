@@ -1,2 +1,2 @@
 const express = require('express');
-constexpressLayouts
+const expressLayouts = require('express-ejs-layouts');
