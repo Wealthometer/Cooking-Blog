@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bootstrap": "^5.3.7",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.0.0",
