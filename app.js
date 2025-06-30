@@ -12,6 +12,7 @@ app.use(expressLayouts);
 
 app.set('layout', './layouts/main');
 
+
 const routes = require('./server/routes/recipeRoutes.js')
 app.use('/', routes);
 
