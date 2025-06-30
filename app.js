@@ -8,4 +8,14 @@ const port = process.env.PORT || 3000;
 require('dotenv').config();
 
 app.use(express.urlencoded({ extended : true }));
-app.use(express.static("Wealth"))
+app.use(express.static('public'));
+app.use(expressLayouts);
+
+app.set('layout', './layouts/main');
+
+const routes = require('./server/routes/recipeRoutes.js')
+app.use('/', routes);
+
+app.listen(port, () => console.log(`listening to port ${port}`));
+
+/img/Image.jpg
