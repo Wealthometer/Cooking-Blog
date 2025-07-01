@@ -30,8 +30,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">`
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -50,30 +50,29 @@
 </head>
 <body>
 
-    <div class="container-xml px-md-5 bg-white shadow-lg">
-       
-        <div>
+    <div class="container-xxl px-md-5 bg-white shadow-lg">
+
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-              <img src="/img/logo.svg" width="229" height="68" alt="Cooking Blog - Made with Node.js">
-            </a>
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="/img/logo.svg" width="229" height="68" alt="Cooking Blog - Made with Node.js">
+        </a>
 
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
-                <li><a href="/about" class="nav-link px-2 link-secondary">About</a></li>
-                <li><a href="/submit-recipe" class="nav-link px-2 link-secondary">Submit</a></li>
-                <li><a href="/contact" class="nav-link px-2 link-secondary">Contact</a></li>
-            </ul>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="/about" class="nav-link px-2 link-secondary">About</a></li>
+            <li><a href="/submit-recipe" class="nav-link px-2 link-secondary">Submit</a></li>
+            <li><a href="/contact" class="nav-link px-2 link-secondary">Contact</a></li>
+        </ul>
 
-            <div class="col-md-3 text-end">
-                <form method="POST" action="/search">
-                <input type="search" name="searchTerm" class="form-control" placeholder="Search..." aria-label="Search">
-                </form>
-            </div>
+        <div class="col-md-3 text-end">
+            <form method="POST" action="/search">
+            <input type="search" name="searchTerm" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
         </header>
 
         <main>
-            <%- body %>
+            <%- body -%>
         </main>
 
         <footer class="py-5">
