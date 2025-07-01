@@ -3,3 +3,8 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser : true, useUnifiedTo
 
 const db = mongoose.connection;
 db.on('error' , console.error(console , "Connection Error"))
+db.once('open', function(){
+    console.log("Connected Successfully");
+});
+
+require('./Category');
