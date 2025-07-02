@@ -35,7 +35,7 @@ async function insertDymmyCategoryData(){
       }
     ]);
   } catch (error) {
-    console.log('err', + error)
+    console.log('err', + error) 
   }
 }
 
