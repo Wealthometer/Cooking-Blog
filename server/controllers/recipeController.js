@@ -1,4 +1,5 @@
-
+require('../models/database');
+const Category = require('../models/Category')
 
 exports.homepage = async(req, res) => {
     res.render('index', { title : 'Cooking-Blog - Home' });
@@ -37,3 +38,5 @@ async function insertDymmyCategoryData(){
     console.log('err', + error)
   }
 }
+
+insertDymmyCategoryData();
