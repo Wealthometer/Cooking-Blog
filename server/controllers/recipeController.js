@@ -39,4 +39,4 @@ async function insertDymmyCategoryData(){
   }
 }
 
-insertDymmyCategoryData(); 
+insertDymmyCategoryData();
