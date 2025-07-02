@@ -2,8 +2,17 @@ require('../models/database');
 const Category = require('../models/Category')
 
 exports.homepage = async(req, res) => {
+
+  try {
     res.render('index', { title : 'Cooking-Blog - Home' });
+  } catch (error) {
+    res.status(500).send({message: error.message || "Error Occured"})
+  }
+
 }
+
+
+
 
 
 // async function insertDymmyCategoryData(){
