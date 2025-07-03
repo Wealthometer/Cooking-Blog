@@ -3,25 +3,22 @@ const Category = require('./Category');
 
 const recipeSchema = new mongoose.Schema({
 
-  name : {
-    type : String,
-    required : 'This field is required.'
-  },
-
-  description : {
-    type : String,
-    required : 'This field is required.'
-  },
-
-  email : {
-    type : String,
-    required : 'This field is required.'
-  },
-
-  ingridents : {
-    type : Array,
-    required : 'This field is required.'
-  },
+    name: {
+    type: String,
+    required: 'This field is required.'
+    },
+    description: {
+    type: String,
+    required: 'This field is required.'
+    },
+    email: {
+    type: String,
+    required: 'This field is required.'
+    },
+    ingredients: {
+    type: Array,
+    required: 'This field is required.'
+    },
 
   category : {
     type : String,
@@ -58,10 +55,11 @@ const recipeSchema = new mongoose.Schema({
     required : 'This field is required.'
   },
 
-  image : {
-    type : String,
-    required : 'This field is required.'
-  },
+  
+    image: {
+    type: String,
+    required: 'This field is required.'
+    },
   
 });
 
