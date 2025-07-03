@@ -5,7 +5,7 @@ exports.homepage = async(req, res) => {
 
   try {
 
-    const limitNumber = 10;
+    const limitNumber = 5;
     const categories = await Category.find({}).limit(limitNumber);
 
     res.render('index', { title : 'Cooking-Blog - Home', categories });
@@ -16,6 +16,19 @@ exports.homepage = async(req, res) => {
 }
 
 
+exports.exploreCategories = async(req, res) => {
+
+  try {
+
+    const limitNumber = 10;
+    const categories = await Category.find({}).limit(limitNumber);
+
+    res.render('categories', { title : 'Cooking-Blog - Categories', categories });
+  } catch (error) {
+    res.status(500).send({message: error.message || "Error Occured"})
+  }
+
+}
 
 
 

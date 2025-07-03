@@ -1,0 +1,15 @@
+<h1>Categories</h1>
+
+
+    <% if(categories != '') { %>
+    <% categories.forEach(function(category, index) { %>
+
+      <a href="/categories/<%- category.name %>" class="col text-center category__link">
+        <div class="category__img shadow">
+          <img src="img/<%- category.image %>" alt="<%- category.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%- category.name %></div>
+      </a>
+      
+    <% }) %>
+  <% } %>
