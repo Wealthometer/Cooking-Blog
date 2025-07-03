@@ -7,11 +7,21 @@ const recipeSchema = new mongoose.Schema({
     required : 'This field is required.'
   },
 
-  image: {
+  description: {
     type : String,
     required : 'This field is required.'
   },
 
+  email: {
+    type : String,
+    required : 'This field is required.'
+  },
+
+  ingridents: {
+    type : Array,
+    required : 'This field is required.'
+  }
+  
 });
 
-module.exports = mongoose.model('Category', recipeSchema);
+module.exports = mongoose.model('Recipe', recipeSchema);
