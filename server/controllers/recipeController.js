@@ -5,7 +5,7 @@ exports.homepage = async(req, res) => {
 
   try {
 
-    const limitNumber = 5;
+    const limitNumber = 10;
     const categories = await Category.find({}).limit(limitNumber);
 
     res.render('index', { title : 'Cooking-Blog - Home', categories });
