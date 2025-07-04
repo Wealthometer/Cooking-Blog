@@ -76,10 +76,6 @@ exports.contactWeb = async(req, res) => {
   res.render('contact', {title: 'Cooking Blog - Contact'})
 }
 
-/**
- * POST /search
- * Search 
-*/
 exports.searchRecipe = async(req, res) => {
   try {
     let searchTerm = req.body.searchTerm;
@@ -91,10 +87,6 @@ exports.searchRecipe = async(req, res) => {
   
 }
 
-/**
- * GET /explore-latest
- * Explplore Latest 
-*/
 exports.exploreLatest = async(req, res) => {
   try {
     const limitNumber = 20;
@@ -105,12 +97,6 @@ exports.exploreLatest = async(req, res) => {
   }
 } 
 
-
-
-/**
- * GET /explore-random
- * Explore Random as JSON
-*/
 exports.exploreRandom = async(req, res) => {
   try {
     let count = await Recipe.find().countDocuments();
@@ -122,21 +108,12 @@ exports.exploreRandom = async(req, res) => {
   }
 } 
 
-
-/**
- * GET /submit-recipe
- * Submit Recipe
-*/
 exports.submitRecipe = async(req, res) => {
   const infoErrorsObj = req.flash('infoErrors');
   const infoSubmitObj = req.flash('infoSubmit');
   res.render('submit-recipe', { title: 'Cooking Blog - Submit Recipe', infoErrorsObj, infoSubmitObj  } );
 }
 
-/**
- * POST /submit-recipe
- * Submit Recipe
-*/
 exports.submitRecipeOnPost = async(req, res) => {
   try {
 
