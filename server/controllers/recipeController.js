@@ -1,4 +1,5 @@
 require('../models/database');
+const { title } = require('process');
 const Category = require('../models/Category');
 const Recipe = require('../models/Recipe');
 
@@ -65,8 +66,15 @@ exports.exploreRecipe = async(req, res) => {
   } catch (error) {
     res.satus(500).send({message: error.message || "Error Occured" });
   }
-} 
+}
 
+exports.aboutWeb = async(req, res) => {
+  res.render('about', {title: 'Cooking Blog - About'})
+}
+
+exports.contactWeb = async(req, res) => {
+  res.render('contact', {title: 'Cooking Blog - Contact'})
+}
 
 /**
  * POST /search
