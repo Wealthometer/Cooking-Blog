@@ -7,6 +7,6 @@ db.once('open', function(){
   console.log('Connected')
 });
 
-// Models
+// Models 
 require('./Category');
 require('./Recipe');
